@@ -1,0 +1,9 @@
+services:
+  web: # web-rails
+    build:
+      context: .
+    volumes:
+      - ./:/app
+    command: bash
+    ports:
+      - 3000:3000
